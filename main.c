@@ -82,8 +82,9 @@ void cleanup()
   }
 }
 
-void signal_handler()
+void signal_handler(int signum)
 {
+  (void) signum;
   exit(EXIT_SUCCESS);
 }
 
